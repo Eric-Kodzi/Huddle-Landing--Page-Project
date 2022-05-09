@@ -184,7 +184,6 @@ body{
     width: 30%;
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -194,23 +193,29 @@ body{
 }
 
 .social-icons i {
-    border: 1px solid white;
-    border-radius: 50%;
-    width: 30px;
-    height: 10px;
-    padding: 10px 0;
-    text-align: center;
-    margin-right: 15px;
+    font-size: 15px
 }
 
-.social-icons i:hover{
+.center-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 20px;
+    border: 1.5px solid white;
+}
+
+.center-icon:hover{
     color: #ff0066;
     background-color: white;
 }
 
  .footer-d p{
      position: relative;
-     top: 170px; 
+     top: 140px; 
  }
 
  .footer-d span{
@@ -219,10 +224,11 @@ body{
  }
 
 
+
  /* Media Queries for Mobile Screen*/
 
 @media only screen and (max-width: 375px){
- 
+    
     /* Header */
     .header{
         margin-bottom: 200px;
@@ -305,7 +311,7 @@ body{
     
     /*Footer*/
     .footer{
-        height: auto;
+        height: 2400px;
     }
     
     .footer-logo{
@@ -349,19 +355,28 @@ body{
     .footer-d{
         text-align: center;
     }
-    
-    .social-icons i{
-        height: 60px;
-        width: 100px;
-        padding: 20px 0;
+
+    .social-icons{
+        margin: 0 auto;
+        margin-top: 150px;
     }
     
-    .footer-d > p{
+    .center-icon{
+        width: 130px;
+        height: 130px;
+        margin-right: 50px;
+        border-radius: 50%;
+        border: 3px solid;
+    }
+    
+    .footer-d  p, .footer-d span{
         position: static;
+        font-size: 35px;
+        margin-top: 100px;
     }
     
-     .footer-d span, .footer-d i{
-         font-size: 30px;
+    .center-icon i{
+         font-size: 60px;
      }
     
     }
